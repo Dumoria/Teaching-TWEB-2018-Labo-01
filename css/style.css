@@ -1,0 +1,239 @@
+body {
+	background-color: rgb(169, 169, 169);
+}
+
+.main {
+
+	/*Position display*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 20px;
+	transform: translateX(-50%) translateY(-50%);
+
+	/*Height and width*/
+	width: 620px;
+	height: 300px;
+
+	/*Font*/
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+
+	/*Other*/
+	background-color: rgb(211, 211, 211);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+marquee {
+	position: absolute;
+	top: 25%;
+	right: 26%;
+	font-size: 50px;
+}
+
+h2 {
+	/*Position display*/
+	position: absolute;
+	top: 0%;
+    left: 40%;
+	
+	/*Font*/
+	font-size: 40px;
+}
+
+h3 {
+	/*Position display*/
+	position: absolute;
+    left: 40%;
+	top: 25%;
+	
+	/*Font*/
+	font-size: 20px;
+}
+
+h4 {
+	/*Position display*/
+	position: absolute;
+    left: 40%;	
+	top: 35%;
+	
+	/*Font*/
+	font-size: 15px;
+	font-weight: normal;
+	text-align: left;
+	color: gray;
+}
+
+a {
+	
+  /*Position display*/
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+  /*Height and width*/
+  height: 40px;
+  width: 150px;
+
+  /*Font*/
+  text-align:center;
+  vertical-align: middle;
+  color: white;
+  
+  /*Other*/
+  background-color: rgb(50,205,50);
+  line-height: 40px;       /* the same as your div height */
+  border-radius: 10px;
+
+}
+
+#behemoth {
+	
+  /*Position display*/
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  /*Height and width*/
+  height: 200px;
+  width: 200px;
+  
+  /*Other*/
+  border-radius: 5%;
+  border: 1px solid #888;
+  
+}
+
+.user-information {
+	
+  /*Position display*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+
+  /*Height and width*/
+  width: 100%;
+  
+  /*Other*/
+  display: flex;
+  justify-content: center;
+
+}
+
+.user-information div {
+  width: calc(100% / 4);
+}
+
+.details {
+  color: #888;
+}
+
+.add-button {
+
+  /*Position display*/
+  position: absolute;
+  left: 85%;
+  top: 10%;
+  border: 0;
+  
+  /*Height and width*/
+  background-color: #e25f5f;
+  width: 50px;
+  height: 50px;
+  
+  /*Font*/
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  
+  /*Other*/
+  cursor: pointer;
+  border-radius: 50%;
+  /*transition: width 300ms, height 300ms, right 300ms, top 300ms, font-size 300ms;
+*/
+  }
+
+.add-button:hover {
+  
+  /*Position display*/
+  top: 165px;
+  right: 105px;
+  
+  /*Height and width*/
+  width: 60px;
+  height: 60px;
+  
+  /*Font*/
+  font-size: 30px;
+}
+
+/*-------------Toggle "About" section-------------*/
+
+label {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+#content {
+  background-color: #9acd32;
+}
+
+label, #content {
+
+  /*Position display*/
+  margin-bottom: 10px;
+  position: absolute;
+  top: 103%;
+  padding: 20px;
+ 
+  /*Height and width*/
+  width: 280px;
+  height: 10px;
+  transform: translateX(-50%) ;
+  display: inline-block;   
+
+  /*Font*/
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  
+  /*Other*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu {
+	
+  /*Position display*/
+  position: absolute;
+  top: 120%;
+  left: 30%;
+  padding: 0;
+  margin: 0 auto;
+  
+  /*Height and width*/
+  
+  width: 280px;
+  height: 220px;
+  max-height: 0;
+  
+  /*Color*/
+  background-color: rgb(200, 200, 200);
+  
+  /*Other*/
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+#menu-toggle:checked + #menu {
+  max-height: 500px;
+}

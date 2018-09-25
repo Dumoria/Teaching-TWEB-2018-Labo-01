@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TWEB - Lab 01</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="main">
+
+<marquee behavior="scroll" loop="-1" width="51%">
+   <i>
+      <font color="black">
+        Today's date is : 
+        <strong>
+         <span id="time"></span>
+        </strong>           
+      </font>
+   </i>
+</marquee> 
+
+<div class="main">
+
+    <p>
+        <img src="images/behemoth.jpg" alt="user" id="behemoth"/>
+        <button class="add-button" id="butt" onclick="setColor()">&hearts;</button>
+    </p>
+    <p>
+		<h2>The Behemoth</h2>
+		<h3>The Behemoth studio</h3>
+		<h4>Follow The Behemoth studio and all its latest games here</h4>
+    </p>
+	
+    <div class="user-information">
+		<div>
+           <a href="https://www.thebehemoth.com/">View Website</a>
+        </div>
+        <div>
+            <strong>456</strong><br/>
+            <span class="details">posts</span>
+        </div>
+        <div>
+            <strong>200</strong><br/>
+            <span class="details">followers</span>
+        </div>
+        <div>
+            <strong>1k</strong><br/>
+            <span class="details">following</span>
+        </div>
+		
+		
+    </div>
+	
+    <div>
+        <label for="menu-toggle">About</label>
+        <input type="checkbox" id="menu-toggle"/>
+        <ul id="menu">
+            The Behemoth is a pioneer in independent game development and publishing across a variety of consoles and
+            platforms. We specialize in making memorable experiences that are both fun to play and beautiful to look at!
+            Making stuff with our hands and meeting the people who play our games helps make us into who we are and what
+            we create.
+
+        </ul>
+    </div>
+	
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
